@@ -1,0 +1,18 @@
+{
+  "name": "ultra-project",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.ts",
+  "scripts": {
+    "dev": "esbuild index.ts --bundle --outfile=dist/index.js --watch --format=esm --loader:.css=text",
+    "build": "esbuild index.ts --bundle --outfile=dist/index.js --format=esm --loader:.css=text"
+  },
+  "keywords": [],
+  "author": "@Dominic",
+  "license": "MIT",
+  "description": "Hello!",
+  "devDependencies": {
+    "@vanilla-extract/css": "1.15.2",
+    "esbuild": "0.21.0"
+  }
+}
